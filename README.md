@@ -10,11 +10,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/rohithvishaal/RaiderTalk/releases/tag/v3.0.0"><img src="https://img.shields.io/badge/Download-v3.0.0_Stable_APK-00E676.svg?style=for-the-badge&logo=android&logoColor=06140C" alt="Download RiderTalk v3.0.0 APK"/></a>
+  <a href="https://github.com/rohithvishaal/RiderTalk-Public/releases/tag/v3.0.0"><img src="https://img.shields.io/badge/Download-v3.0.0_Stable_APK-00E676.svg?style=for-the-badge&logo=android&logoColor=06140C" alt="Download RiderTalk v3.0.0 APK"/></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/rohithvishaal/RaiderTalk/releases/tag/v3.0.0"><img src="https://img.shields.io/badge/Version-v3.0.0_Stable-00E676.svg" alt="Version v3.0.0"/></a>
+  <a href="https://github.com/rohithvishaal/RiderTalk-Public/releases/tag/v3.0.0"><img src="https://img.shields.io/badge/Version-v3.0.0_Stable-00E676.svg" alt="Version v3.0.0"/></a>
   <img src="https://img.shields.io/badge/Platform-Android_12%2B_(API_31--35)-brightgreen.svg" alt="Android 12+"/>
   <img src="https://img.shields.io/badge/Flutter-3.16%2B-blue.svg" alt="Flutter"/>
   <img src="https://img.shields.io/badge/Audio-WebRTC_Opus_48kHz-orange.svg" alt="WebRTC Opus"/>
@@ -39,13 +39,13 @@
 
 ## ⚡ Download (v3.0.0 Stable Release)
 
-Grab the production Android APK directly from the [GitHub v3.0.0 Release](https://github.com/rohithvishaal/RaiderTalk/releases/tag/v3.0.0) *(requires Android 12+ / API 31+)*:
+Grab the production Android APK directly from the [GitHub v3.0.0 Release](https://github.com/rohithvishaal/RiderTalk-Public/releases/tag/v3.0.0) *(requires Android 12+ / API 31+)*:
 
 | Package | Best For | Architecture | Size | Download Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **`app-release.apk`** *(Production Stable)* | Universal package for all modern Android phones (Samsung Galaxy, Moto, Google Pixel, OnePlus, Xiaomi, etc.) | `arm64-v8a`, `armeabi-v7a`, `x86_64` | 96.7 MB | [Download v3.0.0 APK](https://github.com/rohithvishaal/RaiderTalk/releases/download/v3.0.0/app-release.apk) |
+| **`app-release.apk`** *(Production Stable)* | Universal package for all modern Android phones (Samsung Galaxy, Moto, Google Pixel, OnePlus, Xiaomi, etc.) | `arm64-v8a`, `armeabi-v7a`, `x86_64` | 96.7 MB | [Download v3.0.0 APK](https://github.com/rohithvishaal/RiderTalk-Public/releases/download/v3.0.0/app-release.apk) |
 
-> 📋 Check the release notes and SHA-256 integrity checksums in [RELEASE_v3.0.0.md](RELEASE_v3.0.0.md), or browse [all GitHub releases](https://github.com/rohithvishaal/RaiderTalk/releases).
+> 📋 Check the release notes and SHA-256 integrity checksums in [RELEASE_v3.0.0.md](RELEASE_v3.0.0.md), or browse [all GitHub releases](https://github.com/rohithvishaal/RiderTalk-Public/releases).
 
 ---
 
