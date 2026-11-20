@@ -17,6 +17,10 @@
 * **Dual-Tier Audio Routing Engine:** 
   * On Android 12+ (API 31–35), leverages modern `AudioManager.setCommunicationDevice` and `AudioDeviceInfo` communication routing.
   * On Android 11 (API 30), automatically falls back to output device querying via `AudioManager.getDevices(AudioManager.GET_DEVICES_OUTPUTS)` paired with classic `AudioManager.startBluetoothSco()` and `setSpeakerphoneOn()` control.
+* **Resilient Audio Playback Capture on Android 11:**
+  * Fixed transient `AudioRecord.read()` read errors (`ERROR_INVALID_OPERATION`) during initial audio stream warmup or between paused tracks, preventing premature capture teardown and UI dropouts.
+  * Added fallback foreground promotion in `RiderIntercomService` to ensure `FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION` binds reliably across OEM ROMs.
+  * Added a persistent 1.5s network heartbeat timer on the local sharer in `CallViewModel` and `GroupCallViewModel`, preventing silence eviction when media playback is paused or loading.
 * **Full Feature Parity:** 24/7 sticky background radar service (`FOREGROUND_SERVICE_TYPE_CONNECTED_DEVICE`), Tailnet Wide-Area Mesh, high-priority heads-up calling notifications, and `AudioPlaybackCaptureConfiguration` music sharing function seamlessly on Android 11.
 
 ### 🌐 2. Tailnet Wide-Area Mesh Intercom & MagicDNS
@@ -47,10 +51,10 @@
 
 | Asset Name | Target Architecture | File Size | SHA-256 Checksum |
 | :--- | :--- | :--- | :--- |
-| **`app-release.apk`** *(Universal)* | All Android Devices (`arm64-v8a`, `armeabi-v7a`, `x86_64`) | 96.8 MB | `93DA6869620548BE0E26EF8902F25C57F1A06FFEB3246CC773A0BD2810011686` |
-| **`app-arm64-v8a-release.apk`** | Modern 64-bit ARM Phones (Snapdragon, Tensor, Dimensity) | 36.6 MB | `3D52F75172CF7AFE1CEE78C3FD93CEFA3B310B4C71DFACC15D9246566159FA57` |
-| **`app-armeabi-v7a-release.apk`** | 32-bit ARM Legacy Devices | 28.4 MB | `A30FB97DCA1410D1990C02C4C72D0BB0BCF600CB6DE37A145C5B36E38247D6DB` |
-| **`app-x86_64-release.apk`** | 64-bit x86 Devices & Android Emulators | 40.3 MB | `CFE6702E0B398FFFC0C006F2F3D9D578CA5541405F9DE9BA752CC769EA7531AC` |
+| **`app-release.apk`** *(Universal)* | All Android Devices (`arm64-v8a`, `armeabi-v7a`, `x86_64`) | 96.8 MB | `7E46AA8C205146BCDCDBD426CC2357CD417AB095296A8F641B4DC0644E2BBF16` |
+| **`app-arm64-v8a-release.apk`** | Modern 64-bit ARM Phones (Snapdragon, Tensor, Dimensity) | 36.7 MB | `A04C68AEBB7AB1213F76CCF68A78C438F37BCDF789AA460D0CED6183A0C92C24` |
+| **`app-armeabi-v7a-release.apk`** | 32-bit ARM Legacy Devices | 28.5 MB | `FBCCB522888C5B9B45CB290C6F03D36E952610789A9A7569B671945223BF7B25` |
+| **`app-x86_64-release.apk`** | 64-bit x86 Devices & Android Emulators | 40.3 MB | `16BB6F6A5545E39ED72EB3CB49B800CA4049C26951C06790D173B7246FAD16BD` |
 
 ---
 
