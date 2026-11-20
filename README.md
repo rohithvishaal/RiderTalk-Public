@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://github.com/rohithvishaal/RiderTalk-Public/releases/tag/v3.0.0"><img src="https://img.shields.io/badge/Version-v3.0.0_Stable-00E676.svg" alt="Version v3.0.0"/></a>
-  <img src="https://img.shields.io/badge/Platform-Android_12%2B_(API_31--35)-brightgreen.svg" alt="Android 12+"/>
+  <img src="https://img.shields.io/badge/Platform-Android_11%2B_(API_30--35)-brightgreen.svg" alt="Android 11+"/>
   <img src="https://img.shields.io/badge/Flutter-3.16%2B-blue.svg" alt="Flutter"/>
   <img src="https://img.shields.io/badge/Audio-WebRTC_Opus_48kHz-orange.svg" alt="WebRTC Opus"/>
   <img src="https://img.shields.io/badge/Tests-865%2F865_Passing-success.svg" alt="Tests Passing"/>
@@ -39,11 +39,14 @@
 
 ## ⚡ Download (v3.0.0 Stable Release)
 
-Grab the production Android APK directly from the [GitHub v3.0.0 Release](https://github.com/rohithvishaal/RiderTalk-Public/releases/tag/v3.0.0) *(requires Android 12+ / API 31+)*:
+Grab the production Android APK directly from the [GitHub v3.0.0 Release](https://github.com/rohithvishaal/RiderTalk-Public/releases/tag/v3.0.0) *(supports Android 11+ / API 30+)*:
 
 | Package | Best For | Architecture | Size | Download Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **`app-release.apk`** *(Production Stable)* | Universal package for all modern Android phones (Samsung Galaxy, Moto, Google Pixel, OnePlus, Xiaomi, etc.) | `arm64-v8a`, `armeabi-v7a`, `x86_64` | 96.7 MB | [Download v3.0.0 APK](https://github.com/rohithvishaal/RiderTalk-Public/releases/download/v3.0.0/app-release.apk) |
+| **`app-release.apk`** *(Production Stable)* | Universal package for all modern Android phones (Samsung Galaxy, Moto, Google Pixel, OnePlus, Xiaomi, etc.) | `arm64-v8a`, `armeabi-v7a`, `x86_64` | 96.8 MB | [Download v3.0.0 APK](https://github.com/rohithvishaal/RiderTalk-Public/releases/download/v3.0.0/app-release.apk) |
+| **`app-arm64-v8a-release.apk`** | Optimized for modern 64-bit phones (lower battery & storage) | `arm64-v8a` | 36.6 MB | [Download arm64 APK](https://github.com/rohithvishaal/RiderTalk-Public/releases/download/v3.0.0/app-arm64-v8a-release.apk) |
+| **`app-armeabi-v7a-release.apk`** | Lightweight for 32-bit legacy devices | `armeabi-v7a` | 28.4 MB | [Download armeabi APK](https://github.com/rohithvishaal/RiderTalk-Public/releases/download/v3.0.0/app-armeabi-v7a-release.apk) |
+| **`app-x86_64-release.apk`** | Android emulators & Chromebooks | `x86_64` | 40.3 MB | [Download x86_64 APK](https://github.com/rohithvishaal/RiderTalk-Public/releases/download/v3.0.0/app-x86_64-release.apk) |
 
 > 📋 Check the release notes and SHA-256 integrity checksums in [RELEASE_v3.0.0.md](RELEASE_v3.0.0.md), or browse [all GitHub releases](https://github.com/rohithvishaal/RiderTalk-Public/releases).
 
@@ -237,8 +240,8 @@ If the router or hotspot blocks broadcast traffic between clients:
 ### Prerequisites
 * [Flutter SDK](https://docs.flutter.dev/get-started/install) (`>= 3.16.0`)
 * [Dart SDK](https://dart.dev/get-dart) (`>= 3.2.0`)
-* Android SDK (API 35 compileSdk, API 31 minSdk)
-* Physical Android devices running Android 12+ for hardware audio routing tests.
+* Android SDK (API 35 compileSdk, API 30 minSdk)
+* Physical Android devices running Android 11+ for hardware audio routing tests.
 
 ### Build & Deploy Commands
 ```bash

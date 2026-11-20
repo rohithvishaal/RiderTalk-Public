@@ -1,0 +1,6 @@
+# Build and release binaries
+*.apk
+releases/
+build/
+.DS_Store
+*.log
